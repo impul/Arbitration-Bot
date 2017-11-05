@@ -1,4 +1,5 @@
 #include "iostream"
+
 using namespace std;
 
 double taxB1_Out = 0.001;//к≥льк≥сть
@@ -12,7 +13,6 @@ double courseB2 = 6905;
 double StartMoney = 0;
 
 void GiveMeMyMoney(){
-
 	double MoneyOut = StartMoney - taxB1_Out;// ком≥с≥€ за вив≥д з б≥рж≥
 	cout << "Tax(USD)= -" << taxB1_Out*courseB2 <<endl;
 
