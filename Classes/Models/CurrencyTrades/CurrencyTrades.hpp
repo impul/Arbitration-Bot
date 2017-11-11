@@ -10,12 +10,15 @@
 #define CurrencyTrades_hpp
 
 #include <stdio.h>
+#include "Currency.hpp"
 
 class CurrencyTrades {
 public:
-    char *toCurrency;
+    Currency *fromCurrency;
+    Currency *toCurrency;
     double price;
-    CurrencyTrades(char *_toCurrency, double _price);
+    CurrencyTrades(Currency *_fromCurrency,Currency *_toCurrency, double _price);
+    void updatePrice(double newPrice);
 };
 
 #endif /* CurrencyTrades_hpp */

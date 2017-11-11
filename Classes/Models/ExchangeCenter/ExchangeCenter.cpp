@@ -9,7 +9,7 @@
 #include "ExchangeCenter.hpp"
 
 ExchangeCenter::ExchangeCenter(char *_name,
-               CurrenciesVector _currencies,
+               CurrenciesTradesVector _currencies,
                double _fiatСurrencyInputTax,
                double _cryptoСurrencyInputTax,
                double _exchangeTax,

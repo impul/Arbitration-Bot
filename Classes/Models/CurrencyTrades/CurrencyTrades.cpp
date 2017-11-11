@@ -8,7 +8,12 @@
 
 #include "CurrencyTrades.hpp"
 
-CurrencyTrades::CurrencyTrades(char *_toCurrency, double _price) {
+CurrencyTrades::CurrencyTrades(Currency *_fromCurrency,Currency *_toCurrency, double _price) {
+    fromCurrency = _fromCurrency;
     toCurrency = _toCurrency;
     price = _price;
+}
+
+void CurrencyTrades::updatePrice(double newPrice) {
+    price = newPrice;
 }

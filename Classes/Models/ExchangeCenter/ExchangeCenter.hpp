@@ -11,21 +11,21 @@
 
 #include <stdio.h>
 #include <vector>
-#include "Currency.hpp"
+#include "CurrencyTrades.hpp"
 
-typedef std::vector<Currency *> CurrenciesVector;
+typedef std::vector<CurrencyTrades *> CurrenciesTradesVector;
 
 class ExchangeCenter {
 public:
         ExchangeCenter(char *_name,
-                   CurrenciesVector _currencies,
+                   CurrenciesTradesVector _currencies,
                    double _fiatСurrencyInputTax,
                    double _cryptoСurrencyInputTax,
                    double _exchangeTax,
                    double _fiatCurrencyOutputTax,
                    double _cryptoCurrencyOutputTax);
     char *name;
-    CurrenciesVector currencies;
+    CurrenciesTradesVector currencies;
 private:
     double fiatСurrencyInputTax;
     double cryptoСurrencyInputTax;

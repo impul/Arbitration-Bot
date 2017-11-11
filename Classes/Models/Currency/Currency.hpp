@@ -12,18 +12,13 @@
 #include <stdio.h>
 #include <vector>
 
-#include "CurrencyTrades.hpp"
-
-typedef std::vector<CurrencyTrades> CurrencyTradesVector;
-
 class Currency {
-    Currency(char* _name,CurrencyTradesVector _trades);
-    Currency(char* _name,char _simbol,CurrencyTradesVector _trades);
+    Currency(char* _name);
+    Currency(char* _name,char _simbol);
     
 public:
     char* name;
     char simbol;
-    CurrencyTradesVector trades;
 };
 
 

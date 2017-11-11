@@ -8,12 +8,11 @@
 
 #include "Currency.hpp"
 
-Currency::Currency(char* _name,CurrencyTradesVector _trades) {
-    Currency::Currency(name,name[0],_trades);
+Currency::Currency(char* _name) {
+    Currency::Currency(name,name[0]);
 }
 
-Currency::Currency(char* _name,char _simbol,CurrencyTradesVector _trades) {
+Currency::Currency(char* _name,char _simbol) {
     name = _name;
     simbol = _simbol;
-    trades = _trades;
 }
