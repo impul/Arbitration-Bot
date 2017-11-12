@@ -8,11 +8,11 @@
 
 #include "Currency.hpp"
 
-Currency::Currency(char* _name) {
-    Currency::Currency(name,name[0]);
+Currency::Currency(std::string *_name) {
+    Currency::Currency(name,((char *)_name)[0]);
 }
 
-Currency::Currency(char* _name,char _simbol) {
+Currency::Currency(std::string *_name,char _simbol) {
     name = _name;
     simbol = _simbol;
 }

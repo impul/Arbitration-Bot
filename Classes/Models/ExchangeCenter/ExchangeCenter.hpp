@@ -10,6 +10,7 @@
 #define ExchangeCenter_hpp
 
 #include <stdio.h>
+#include <string>
 #include <vector>
 #include "CurrencyTrades.hpp"
 
@@ -17,14 +18,14 @@ typedef std::vector<CurrencyTrades *> CurrenciesTradesVector;
 
 class ExchangeCenter {
 public:
-        ExchangeCenter(char *_name,
+    ExchangeCenter(std::string *_name,
                    CurrenciesTradesVector _currencies,
                    double _fiatСurrencyInputTax,
                    double _cryptoСurrencyInputTax,
                    double _exchangeTax,
                    double _fiatCurrencyOutputTax,
                    double _cryptoCurrencyOutputTax);
-    char *name;
+    std::string *name;
     CurrenciesTradesVector currencies;
 private:
     double fiatСurrencyInputTax;

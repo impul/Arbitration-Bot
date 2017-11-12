@@ -24,3 +24,7 @@ bool BalanceProperty::decrementBalanceBySum(double sum) {
     }
     return false;
 }
+
+double BalanceProperty::getBalance() {
+    return balance;
+}

@@ -8,7 +8,7 @@
 
 #include "ExchangeCenter.hpp"
 
-ExchangeCenter::ExchangeCenter(char *_name,
+ExchangeCenter::ExchangeCenter(std::string *_name,
                CurrenciesTradesVector _currencies,
                double _fiatСurrencyInputTax,
                double _cryptoСurrencyInputTax,

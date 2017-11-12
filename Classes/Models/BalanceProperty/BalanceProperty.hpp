@@ -22,6 +22,7 @@ public:
     BalanceProperty(int _balance,Currency *_currency,ExchangeCenter *_center);
     bool incrementBalanceBySum(double sum);
     bool decrementBalanceBySum(double sum);
+    double getBalance();
 };
 
 #endif /* BalanceProperty_hpp */

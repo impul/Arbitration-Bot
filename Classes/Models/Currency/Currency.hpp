@@ -13,11 +13,11 @@
 #include <vector>
 
 class Currency {
-    Currency(char* _name);
-    Currency(char* _name,char _simbol);
+    Currency(std::string *_name);
+    Currency(std::string *_name,char _simbol);
     
 public:
-    char* name;
+    std::string *name;
     char simbol;
 };
 

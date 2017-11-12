@@ -36,21 +36,21 @@ void GiveMeMyMoney(){
 }
 
 int main(){
-label1:
+//label1:
 	//cout << "Course exchange first ?" << endl;
 	//cin >> courseB1;
 	//cout << "Course exchange second ?" << endl;
 	//cin >> courseB2;
+    
+	//cout << "You have Coin ?" << endl;
+	//cin >> StartMoney;
+	//cout << " = " << StartMoney*courseB1 << "USD" << endl;
 
-	cout << "You have Coin ?" << endl;
-	cin >> StartMoney;
-	cout << " = " << StartMoney*courseB1 << "USD" << endl;
-
-	GiveMeMyMoney();
+	//GiveMeMyMoney();
 	
 	system("pause");
-	system("cls");
-	goto label1;
+	//system("cls");
+	//goto label1;
 	
 }
 
