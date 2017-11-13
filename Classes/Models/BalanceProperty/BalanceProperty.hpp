@@ -10,16 +10,14 @@
 #define BalanceProperty_hpp
 
 #include <stdio.h>
-
-#include "ExchangeCenter.hpp"
+#include "Currency.hpp"
 
 class BalanceProperty {
 private:
     double balance;
 public:
     Currency *currency;
-    ExchangeCenter *center;
-    BalanceProperty(int _balance,Currency *_currency,ExchangeCenter *_center);
+    BalanceProperty(int _balance,Currency *_currency);
     bool incrementBalanceBySum(double sum);
     bool decrementBalanceBySum(double sum);
     double getBalance();

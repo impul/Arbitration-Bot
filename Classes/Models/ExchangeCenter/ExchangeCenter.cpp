@@ -9,7 +9,6 @@
 #include "ExchangeCenter.hpp"
 
 ExchangeCenter::ExchangeCenter(std::string *_name,
-               CurrenciesTradesVector _currencies,
                double _fiatСurrencyInputTax,
                double _cryptoСurrencyInputTax,
                double _exchangeTax,
@@ -17,7 +16,6 @@ ExchangeCenter::ExchangeCenter(std::string *_name,
                double _cryptoCurrencyOutputTax)
 {
     name = _name;
-    currencies = _currencies;
     exchangeTax = _exchangeTax;
     fiatCurrencyOutputTax = _fiatCurrencyOutputTax;
     fiatСurrencyInputTax = _fiatСurrencyInputTax;

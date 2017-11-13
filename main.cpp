@@ -1,4 +1,5 @@
 #include "iostream"
+#include "ArbitrationDemon.hpp"
 
 using namespace std;
 
@@ -36,21 +37,11 @@ void GiveMeMyMoney(){
 }
 
 int main(){
-//label1:
-	//cout << "Course exchange first ?" << endl;
-	//cin >> courseB1;
-	//cout << "Course exchange second ?" << endl;
-	//cin >> courseB2;
     
-	//cout << "You have Coin ?" << endl;
-	//cin >> StartMoney;
-	//cout << " = " << StartMoney*courseB1 << "USD" << endl;
-
-	//GiveMeMyMoney();
-	
-	system("pause");
-	//system("cls");
-	//goto label1;
-	
+    static const ExchangeCenter centers[] = {};
+    std::vector<ExchangeCenter> centersVector (centers,centers + sizeof(centers) / sizeof(ExchangeCenter));
+    ArbitrationDemon demon = ArbitrationDemon(centersVector,5);
+    
+    return 0;
 }
 

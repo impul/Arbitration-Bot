@@ -13,13 +13,14 @@
 #include <string>
 #include <vector>
 #include "CurrencyTrades.hpp"
+#include "BalanceProperty.hpp"
 
 typedef std::vector<CurrencyTrades *> CurrenciesTradesVector;
+typedef std::vector<BalanceProperty *> BalancesVector;
 
 class ExchangeCenter {
 public:
     ExchangeCenter(std::string *_name,
-                   CurrenciesTradesVector _currencies,
                    double _fiatСurrencyInputTax,
                    double _cryptoСurrencyInputTax,
                    double _exchangeTax,
@@ -27,6 +28,9 @@ public:
                    double _cryptoCurrencyOutputTax);
     std::string *name;
     CurrenciesTradesVector currencies;
+    BalancesVector balances;
+    
+    virtual void update(){};
 private:
     double fiatСurrencyInputTax;
     double cryptoСurrencyInputTax;

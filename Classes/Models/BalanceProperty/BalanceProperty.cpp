@@ -8,7 +8,7 @@
 
 #include "BalanceProperty.hpp"
 
-BalanceProperty::BalanceProperty(int _balance,Currency *_currency,ExchangeCenter *_center) {
+BalanceProperty::BalanceProperty(int _balance,Currency *_currency) {
     
 }
 
